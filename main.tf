@@ -27,7 +27,7 @@ resource "azurerm_virtual_network" "Terraform" {
 # create a storage account
 
 resource "azurerm_storage_account" "Terraform" {
-  name                     = "storageaccountname"
+  name                     = "terraformstorage"
   resource_group_name      = azurerm_resource_group.Terraform.name
   location                 = "East US"
   account_tier             = "Standard"
